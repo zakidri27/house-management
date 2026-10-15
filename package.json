@@ -1,0 +1,34 @@
+{
+  "name": "manzil",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Manzil — an offline-first app to manage your home budget and daily expenses (monthly budget, groceries, bills, debts, price tracking, savings and goals).",
+  "author": "Zaki <zdri57556@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://zakidri27.github.io/house-management/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zakidri27/house-management.git"
+  },
+  "keywords": [
+    "home-management",
+    "expense-tracker",
+    "budget",
+    "personal-finance",
+    "capacitor",
+    "android",
+    "offline-first",
+    "vanilla-javascript"
+  ],
+  "scripts": {
+    "copy:web": "node scripts/copy-web.js",
+    "sync": "npm run copy:web && cap sync android",
+    "open:android": "npm run sync && cap open android",
+    "apk": "powershell -ExecutionPolicy Bypass -File scripts/build-apk.ps1"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.2",
+    "@capacitor/cli": "^6.2.2",
+    "@capacitor/core": "^6.2.2"
+  }
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">منزل</string>
+    <string name="title_activity_main">منزل</string>
+    <string name="package_name">com.manzil.app</string>
+    <string name="custom_url_scheme">com.manzil.app</string>
+</resources>

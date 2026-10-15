@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Manzil — Home &amp; Daily Expense Manager</title>
+<meta name="description" content="Manzil is an offline-first app to manage your household money: monthly budget, groceries, bills, debts, price tracking, savings and goals. Built with vanilla JavaScript and Capacitor for Android." />
+<meta name="author" content="Zaki" />
+<meta name="keywords" content="Manzil, home management, expense manager, budget, groceries, bills, debts, savings, goals, Capacitor, Android, offline" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Manzil — Home &amp; Daily Expense Manager" />
+<meta property="og:description" content="Manage your household money offline: budget, groceries, bills, debts, savings and goals." />
+<meta property="og:image" content="assets/logo.svg" />
+
+<link rel="icon" href="assets/logo.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="brand" href="#top">
+      <img src="assets/logo.svg" alt="Manzil logo" />
+      <span>Manzil<small>Home &amp; Expense Manager</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#modules">Modules</a>
+      <a href="#tech">Tech</a>
+      <a href="app/index.html">Live Demo</a>
+      <a class="nav-cta" href="https://github.com/zakidri27/house-management/releases/latest/download/Manzil-1.0.0.apk">⬇️ Download</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero container" id="top">
+  <div class="badge-pill"><span class="dot"></span> v1.0.0 · Android · Works fully offline</div>
+  <img class="hero-logo" src="assets/logo.svg" alt="Manzil logo" />
+  <h1>Take control of your <span class="grad">household money</span></h1>
+  <p class="lead">
+    Manzil is a clean, offline-first app to manage your home finances: monthly budget, groceries,
+    utility bills, debts, price tracking, savings and goals — all in one place, with charts and a
+    full backup of your data. No account, no internet, no tracking.
+  </p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="app/index.html">🚀 Try the live demo</a>
+    <a class="btn btn-ghost" href="https://github.com/zakidri27/house-management/releases/latest/download/Manzil-1.0.0.apk">⬇️ Download for Android</a>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>10</b><span>Integrated pages</span></div>
+    <div class="stat"><b>3</b><span>Chart types</span></div>
+    <div class="stat"><b>3</b><span>Languages of data</span></div>
+    <div class="stat"><b>100%</b><span>Offline-first</span></div>
+  </div>
+</header>
+
+<section id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">Features</div>
+      <h2>Everything you need to run your home budget</h2>
+      <p>A simple, focused tool that keeps your household money clear and under control.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card reveal"><div class="ico">🏠</div><h3>Home Dashboard</h3><p>See the month's remainder, available money, debts and goals at a glance, plus a live activity feed.</p></div>
+      <div class="card reveal"><div class="ico">🗓️</div><h3>Monthly Budget</h3><p>Record your monthly income and track the remainder for every month.</p></div>
+      <div class="card reveal"><div class="ico">📊</div><h3>Reports &amp; Charts</h3><p>Bar, pie and line charts for spending by category and income vs. expenses trends.</p></div>
+      <div class="card reveal"><div class="ico">🏷️</div><h3>Price Tracking</h3><p>Save prices of goods (sugar, fuel, …) with a unit, so you always know today's cost.</p></div>
+      <div class="card reveal"><div class="ico">🛒</div><h3>Groceries</h3><p>Quick entry or itemized mode with quantities, units, prices and an automatic total.</p></div>
+      <div class="card reveal"><div class="ico">🧾</div><h3>Bills</h3><p>Gas, water, electricity, fuel, internet, rent and custom categories.</p></div>
+      <div class="card reveal"><div class="ico">🤝</div><h3>Debts</h3><p>Track money lent to others and money you owe, with partial payments and progress.</p></div>
+      <div class="card reveal"><div class="ico">📦</div><h3>Other Expenses</h3><p>Log any uncategorized expense in seconds.</p></div>
+      <div class="card reveal"><div class="ico">🐷</div><h3>Savings</h3><p>An automatic savings balance derived from income, expenses, debts and goals.</p></div>
+      <div class="card reveal"><div class="ico">🎯</div><h3>Goals</h3><p>Create savings goals with targets, fund them from your balance and watch progress.</p></div>
+      <div class="card reveal"><div class="ico">🛡️</div><h3>Backup &amp; Restore</h3><p>Export all your data to a JSON file and import it back any time.</p></div>
+      <div class="card reveal"><div class="ico">🌙</div><h3>Dark Mode &amp; RTL</h3><p>A polished Arabic-first interface with RTL layout and a light/dark theme.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="modules">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">Modules</div>
+      <h2>Pages &amp; navigation</h2>
+      <p>Organized into three groups for quick access from the side menu.</p>
+    </div>
+    <div class="arch reveal">
+      <pre>Home  ──┬── GROUP A : Overview
+        │     ├── Home       ── dashboard & activity
+        │     ├── Monthly    ── monthly income
+        │     ├── Reports    ── charts & analytics
+        │     └── Prices     ── price tracking
+        │
+        ├── GROUP B : Spending
+        │     ├── Groceries  ── quick / detailed
+        │     ├── Bills      ── utilities & rent
+        │     ├── Debts      ── for us / on us
+        │     └── Other      ── misc expenses
+        │
+        └── GROUP C : Growth
+              ├── Savings    ── computed balance
+              └── Goals      ── savings targets</pre>
+    </div>
+  </div>
+</section>
+
+<section id="tech">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">Tech Stack</div>
+      <h2>Lightweight and dependency-free</h2>
+      <p>Built with plain web technologies and packaged for Android.</p>
+    </div>
+    <div class="tech-wrap reveal">
+      <span class="chip">🟨 Vanilla JavaScript</span>
+      <span class="chip">🎨 CSS3 (custom themes)</span>
+      <span class="chip">📱 Capacitor 6</span>
+      <span class="chip">🤖 Android</span>
+      <span class="chip">💾 localStorage</span>
+      <span class="chip">📈 Canvas charts</span>
+      <span class="chip">🌐 RTL support</span>
+    </div>
+  </div>
+</section>
+
+<section id="security">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">Privacy &amp; Architecture</div>
+      <h2>Private by design</h2>
+      <p>No servers, no accounts, no analytics — your data never leaves your device.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal"><div class="ico">🔒</div><h3>100% Local</h3><p>All data is stored in your browser/device storage — nothing is uploaded.</p></div>
+      <div class="card reveal"><div class="ico">📴</div><h3>Offline-First</h3><p>Works without any internet connection, anywhere.</p></div>
+      <div class="card reveal"><div class="ico">🛡️</div><h3>Budget Guard</h3><p>Prevents recording spending that exceeds your available money.</p></div>
+    </div>
+    <div class="arch reveal" style="margin-top:18px">
+      <pre>┌────────────────────────────  Web app (www/)  ───────────────────────────┐
+│                                                                         │
+│   store.js  ──►  localStorage  (manzil_data_v1)                         │
+│   util.js   ──►  analytics: income, expenses, available, savings         │
+│   charts.js ──►  bar / pie / line on &lt;canvas&gt;                           │
+│   pages.js  ──►  home, monthly, reports, prices, groceries,             │
+│                   bills, debts, other, savings, goals                   │
+│                                                                         │
+│   Capacitor  ──►  packages the same web app as a native Android build    │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘</pre>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="container">
+    <div class="download-card reveal">
+      <h2>Try Manzil now</h2>
+      <p>Open the live demo in your browser, or download the Android app and install it directly.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="app/index.html">🚀 Open the live demo</a>
+        <a class="btn btn-ghost" href="https://github.com/zakidri27/house-management/releases/latest/download/Manzil-1.0.0.apk">⬇️ Download Manzil-1.0.0.apk</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="socials">
+      <a href="https://github.com/zakidri27/house-management">GitHub</a>
+      <a href="https://github.com/zakidri27/house-management/releases">Releases</a>
+      <a href="https://github.com/zakidri27/house-management/issues">Issues</a>
+    </div>
+    <p>Made with ❤️ by <strong>Zaki</strong> · © 2026 — Manzil</p>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+</script>
+</body>
+</html>

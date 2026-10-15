@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- rooftop -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,30 L79,50 L29,50 Z" />
+    <!-- house body -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M37.5,48 L70.5,48 L70.5,76.5 Q70.5,79 68,79 L40,79 Q37.5,79 37.5,76.5 Z" />
+    <!-- door -->
+    <path
+        android:fillColor="#FF6D28D9"
+        android:pathData="M48,60 L60,60 L60,79 L48,79 Z" />
+    <!-- coin window -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,55 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+</vector>
